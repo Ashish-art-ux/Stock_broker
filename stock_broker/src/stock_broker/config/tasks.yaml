@@ -1,0 +1,34 @@
+fetch_market_data:
+  description: "Fetch real-time market data for {symbol} with {interval} intervals and prepare it for analysis"
+  expected_output: "Clean OHLCV market data dictionary with timestamps as keys and price/volume data as values"
+  agent: market_analyst
+
+analyze_technical_indicators:
+  description: "Perform comprehensive technical analysis on market data for {symbol} including RSI, MACD, moving averages, and momentum indicators"
+  expected_output: "Technical analysis report with calculated indicators, trading signals, and bullish/bearish recommendations"
+  agent: technical_analyst
+
+analyze_news_sentiment:
+  description: "Analyze recent news sentiment for {symbol} and assess market psychology impact on stock price"
+  expected_output: "Sentiment analysis report with overall sentiment score, confidence level, and key news headlines affecting the stock"
+  agent: sentiment_analyst
+
+identify_chart_patterns:
+  description: "Identify chart patterns, support/resistance levels, and price action signals for {symbol} using pattern recognition techniques"
+  expected_output: "Pattern recognition report with identified patterns (triangles, head & shoulders, double tops/bottoms), support/resistance levels, and breakout signals"
+  agent: pattern_recognition_analyst
+
+multi_timeframe_analysis:
+  description: "Analyze trends across multiple timeframes (1min, 5min, 15min, 1hr) for {symbol} to confirm signal confluence"
+  expected_output: "Multi-timeframe analysis with trend alignment assessment, signal confluence detection, and timeframe-based recommendations"
+  agent: multi_timeframe_analyst
+
+calculate_risk_parameters:
+  description: "Calculate position sizing, stop losses, take profit levels, and comprehensive risk management parameters for {symbol}"
+  expected_output: "Risk management report with recommended position size, stop-loss levels, take-profit targets, and portfolio allocation guidelines"
+  agent: risk_manager
+
+generate_final_recommendation:
+  description: "Synthesize all analyses (technical, sentiment, patterns, multi-timeframe, and risk) to provide comprehensive trading recommendation for {symbol}"
+  expected_output: "Final trading recommendation with entry/exit strategy, risk assessment, confidence level, and complete rationale based on all previous analyses"
+  agent: portfolio_manager
